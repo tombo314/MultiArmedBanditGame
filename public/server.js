@@ -1,1 +1,2 @@
-let routing = require("./routing.js");
+require("./routing.js");
+
