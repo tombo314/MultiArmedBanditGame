@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet/main.css"></link>
-    <script src="socket.io/socket.io.js"></script>
     <title>MultiArmedBanditGame</title>
 </head>
 <body>
@@ -13,21 +12,31 @@
     </div>
 
     <div class="main">
+        <div class="wrapper-money">
+            <p><span id="money">0</span> G</p>
+        </div>
+
         <div class="wrapper-slot">
-            <div class="slot"></div>
-            <div class="slot"></div>
-            <div class="slot"></div>
-            <div class="slot"></div>
-            <div class="slot"></div>
+            <div class="slot"><p>+100%</p></div>
+            <div class="br"></div>
+            <div class="slot"><p>+100%</p></div>
+            <div class="br"></div>
+            <div class="slot"><p>+100%</p></div>
+            <div class="br"></div>
+            <div class="slot"><p>+100%</p></div>
+            <div class="br"></div>
+            <div class="slot"><p>+100%</p></div>
         </div>
         
-        <div class="wrapper-button">
-            <div class="button"><button>STOP</button></div>
-            <div class="button"><button>STOP</button></div>
-            <div class="button"><button>STOP</button></div>
-            <div class="button"><button>STOP</button></div>
-            <div class="button"><button>STOP</button></div>
+        <div class="wrapper-bet">
+            <div class="bet">
+                <img src="" alt="">
+                <p><span>0</span> G</p>
+                <img src="" alt="">
+            </div>
+            <div class="br"></div>
         </div>
+        <div class="wrapper-button"><button>START</button></div>
     </div>
 
     <div class="footer"></div>

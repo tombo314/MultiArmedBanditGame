@@ -7,7 +7,7 @@
 .header {
     display: flex;
     height: 15vh;
-    background-color: #fa2;
+    background-color: #fb3e;
     text-shadow: 1px 1px #ddd;
     align-items: center;
     
@@ -20,34 +20,55 @@
 }
 
 .main {
+    height: 75vh;
+
+    .wrapper-money {
+        position: relative;
+        right: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 15vh;
+        font-size: 20px;
+    }
     
     .wrapper-slot {
         display: flex;
+        justify-content: center;
 
         .slot {
-            width: 20vw;
-            height: 60vh;
+            width: 15vw;
+            height: 40vh;
             border: 1px #444 solid;
         }
+
+        .br {
+            width: 3vw;
+        }
+    }
+
+    .wrapper-bet {
+        width: 20vw;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .wrapper-button {
         display: flex;
+        width: 20vw;
+        height: 10vh;
+        align-items: center;
+        justify-content: center;
 
-        .button {
-            width: 20vw;
-            height: 10vh;
-            margin-top: 3vh;
-            text-align: center;
-
-            button {
-                width: 70px;
-                height: 40px;
-            }
+        button {
+            width: 70px;
+            height: 40px;
         }
     }
 }
 
 .footer {
-    height: 15vh;
+    height: 10vh;
 }

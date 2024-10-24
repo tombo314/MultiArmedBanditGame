@@ -1,7 +1,7 @@
 let http = require("http");
 let fs = require("fs");
 
-let server = http.createServer((req, res)=>{
+http.createServer((req, res)=>{
     if (req.url==="/"){
         res.writeHead(200, {"Content-Type": "text/html"});
         res.end(fs.readFileSync("index.html"));
