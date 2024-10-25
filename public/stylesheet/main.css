@@ -6,7 +6,7 @@
 
 .header {
   display: flex;
-  height: 15vh;
+  height: 13vh;
   background-color: rgba(255, 187, 51, 0.8);
   text-shadow: 1px 1px #ddd;
   align-items: center;
@@ -19,7 +19,7 @@
 }
 
 .main {
-  height: 79vh;
+  height: 81vh;
 }
 .main .wrapper-reset-money {
   display: flex;
@@ -37,13 +37,25 @@
   height: 40px;
   font-size: 16px;
 }
-.main .wrapper-reset-money .wrapper-money {
+.main .wrapper-reset-money .wrapper-max-money {
   position: relative;
-  right: 10vw;
-  width: 75vw;
+  width: 50vw;
   display: flex;
   justify-content: flex-end;
-  font-size: 24px;
+  font-size: 22px;
+}
+@media (max-width: 900px) {
+  .main .wrapper-reset-money .wrapper-max-money {
+    right: 100px;
+  }
+}
+.main .wrapper-reset-money .wrapper-money {
+  position: relative;
+  right: 100px;
+  width: 25vw;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 22px;
 }
 .main .wrapper-slot {
   width: 100vw;
@@ -52,8 +64,17 @@
 }
 .main .wrapper-slot .slot {
   width: 15vw;
-  height: 40vh;
+  height: 42vh;
   border: 1px #444 solid;
+}
+.main .wrapper-slot .slot p {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .wrapper-slot .slot p:nth-child(n+2) {
+  border-top: 1px solid #222;
 }
 .main .wrapper-slot .br {
   width: 3vw;
@@ -77,6 +98,9 @@
 }
 .main .wrapper-bet .bet img:hover {
   opacity: 0.7;
+}
+.main .wrapper-bet .bet img:active {
+  opacity: 0.4;
 }
 .main .wrapper-bet .bet .rotate-180 {
   transform: rotate(180deg);

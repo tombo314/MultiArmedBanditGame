@@ -8,7 +8,7 @@ $background-color: #fb3c;
 
 .header {
     display: flex;
-    height: 15vh;
+    height: 13vh;
     background-color: $background-color;
     text-shadow: 1px 1px #ddd;
     align-items: center;
@@ -22,7 +22,7 @@ $background-color: #fb3c;
 }
 
 .main {
-    height: 79vh;
+    height: 81vh;
 
     .wrapper-reset-money {
         display: flex;
@@ -42,13 +42,27 @@ $background-color: #fb3c;
             }
         }
 
-        .wrapper-money {
+        .wrapper-max-money {
             position: relative;
-            right: 10vw;
-            width: 75vw;
+            width: 50vw;
             display: flex;
             justify-content: flex-end;
-            font-size: 24px;
+            font-size: 22px;
+        }
+        @media (max-width: 900px){
+            .wrapper-max-money {
+                right: 100px;
+            }
+        }
+
+
+        .wrapper-money {
+            position: relative;
+            right: 100px;
+            width: 25vw;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 22px;
         }
     }
     
@@ -59,8 +73,19 @@ $background-color: #fb3c;
 
         .slot {
             width: 15vw;
-            height: 40vh;
+            height: 42vh;
             border: 1px #444 solid;
+
+            p {
+                height: 7vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:nth-child(n+2){
+                    border-top: 1px solid #222;
+                }
+            }
         }
 
         .br {
@@ -87,6 +112,10 @@ $background-color: #fb3c;
 
                 &:hover {
                     opacity: 0.7;
+                }
+
+                &:active {
+                    opacity: 0.4;
                 }
             }
 
